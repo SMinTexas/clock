@@ -1,4 +1,4 @@
-.App {
+/* .App {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@
 
 .App-link {
     color: #09d3ac;
-}
+} */
 
 ul,
 li {
@@ -69,6 +69,12 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 5px;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 5px;
 }
 
 h5 {
@@ -88,9 +94,85 @@ img {
     height: 500px;
 }
 
-.clocks {
+.local-clock {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.northamerican-clocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.pacific {
+    order: 1;
+}
+
+.mountain {
+    order: 2;
+}
+
+.central {
+    order: 3;
+}
+
+.eastern {
+    order: 4;
+}
+
+.atlantic {
+    order: 5;
+}
+
+.southamerican-clocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.african-clocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.european-clocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.asian-clocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.australian-clocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.alarm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }

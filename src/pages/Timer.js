@@ -31,7 +31,7 @@ export default class Clock extends Component {
     }
 
     startTimer() {
-        if (this.timer == 0 && this.state.seconds > 0) {
+        if (this.timer === 0 && this.state.seconds > 0) {
             this.timer = setInterval(this.countDown, 1000);
         }
     }
@@ -44,7 +44,7 @@ export default class Clock extends Component {
             seconds: seconds,
         });
 
-        if (seconds == 0) {
+        if (seconds === 0) {
             this.setState({ message: "Time's Up!" })
             clearInterval(this.timer);
         }
@@ -52,10 +52,10 @@ export default class Clock extends Component {
     render() {
         return (
             <>
-                <h2>{this.state.message}</h2>
-                <div class="clocks">
-                    <button onClick={this.startTimer}>Start The Countdown</button>
-                    m: {this.state.time.m} s: {this.state.time.s}
+                <div class="timer">
+                    <h2>{this.state.message}</h2>
+                        <button onClick={this.startTimer}>Start The Countdown</button>
+                        m: {this.state.time.m} s: {this.state.time.s}
                 </div>
             </>
         )

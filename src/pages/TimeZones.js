@@ -20,22 +20,24 @@ export default class Clock extends Component {
     render() {
         return (
             <>
-                <h2>Time Zones</h2>
-                <div class="clocks">
-                    <h3>Pacific</h3>
-                    <h3>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/Los_Angeles"})}</h3>
-                </div>
-                <div class="clocks">
-                    <h3>Mountain</h3>
-                    <h3>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/Denver"})}</h3>
-                </div>
-                <div class="clocks">
-                    <h3>Central</h3>
-                    <h3>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/Chicago"})}</h3>
-                </div>
-                <div class="clocks">
-                    <h3>Eastern</h3>
-                    <h3>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/New_York"})}</h3>
+                <h3>Time Zones (United States)</h3>
+                <div class="southamerican-clocks">
+                    <div class="pacific">
+                        <h4>Pacific (PST)</h4>
+                        <h4>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/Los_Angeles"})}</h4>
+                    </div>
+                    <div class="mountain">
+                        <h4>Mountain (MST)</h4>
+                        <h4>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/Denver"})}</h4>
+                    </div>
+                    <div class="central">
+                        <h4>Central (CST)</h4>
+                        <h4>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/Chicago"})}</h4>
+                    </div>
+                    <div class="eastern">
+                        <h4>Eastern (EST)</h4>
+                        <h4>{this.state.time.toLocaleTimeString("en-US", {timeZone: "America/New_York"})}</h4>
+                    </div>
                 </div>
             </>
         )
